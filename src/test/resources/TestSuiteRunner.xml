@@ -1,0 +1,14 @@
+<suite name="test1" verbose="1">
+  
+  <listeners>
+    <listener class-name="utilities.MyListeners"></listener>
+  </listeners>
+  
+	<test name="CHILTERNOAK">
+		
+		<classes>
+			<class name="runners.TestNGRunner"></class>	
+		</classes>
+		
+	</test>
+</suite>

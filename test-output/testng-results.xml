@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-11T11:01:15 IST" name="test1" finished-at="2023-12-11T11:01:45 IST" duration-ms="29220">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3e2943ab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-11T11:01:15 IST" name="CHILTERNOAK" finished-at="2023-12-11T11:01:45 IST" duration-ms="29220">
+      <class name="runners.TestNGRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestNGRunner@3e2943ab]" started-at="2023-12-11T11:01:15 IST" name="setUpClass" finished-at="2023-12-11T11:01:17 IST" duration-ms="1904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@731d0d5c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestNGRunner@3e2943ab]" started-at="2023-12-11T11:01:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-11T11:01:39 IST" duration-ms="22121" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Sign In functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["To test the Sign In functionality of Chiltern Oak Furniture Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.chilternoakfurniture.co.uk/account/login?return_url=%2Faccount] but found [https://www.chilternoakfurniture.co.uk/challenge]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.chilternoakfurniture.co.uk/account/login?return_url=%2Faccount] but found [https://www.chilternoakfurniture.co.uk/challenge]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at stepDefinitions.SignInStepDef.i_click_on_sign_in_button(SignInStepDef.java:71)
+at ✽.I click on Sign In button(file:///C:/Users/hp/eclipse-workspace/RLLproject/src/test/java/features/SignIn.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestNGRunner@3e2943ab]" started-at="2023-12-11T11:01:40 IST" name="tearDownClass" finished-at="2023-12-11T11:01:45 IST" duration-ms="5019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestNGRunner -->
+    </test> <!-- CHILTERNOAK -->
+  </suite> <!-- test1 -->
+</testng-results>
