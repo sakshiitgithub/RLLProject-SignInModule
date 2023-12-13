@@ -22,6 +22,9 @@ public class SignInPage  {
 	@FindBy(xpath="//input[@value='Sign In']")
 	static WebElement Btn_SignIn;
 	
+	@FindBy(xpath="//div[@class='errors']/descendant::li")
+	public static WebElement message_validation;
+	
 	
 	public void clickSignInIcon() {
 		SignIn_icon.click();
@@ -35,10 +38,15 @@ public class SignInPage  {
 	
 	public void clickSignInSubmitButton() {
 		Btn_SignIn.click();
+		
 	}
 	public String validateURL() {
 		String Url = TestBase.driver.getCurrentUrl();
 		return Url;
 	}
+	
 
 }
+	
+	
+	
